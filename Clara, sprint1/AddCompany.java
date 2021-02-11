@@ -2,25 +2,25 @@
 public class AddCompany {
     String name;
     String URL;
-    String compPhone;
+    int compPhone;
     String password;
     String password2; 
-    String phone;
-    //String email;
+    //String phone;
+    String email;
 
-    public AddCompany(String name, String URL, String compPhone, String password, String password2, String phone) {
+    public AddCompany(String name, String email, int compPhone, String password, String password2, String URL) {
         super ();
-        //this.email = email;
-        this.name = name;
-        this.URL = URL;
-        this.compPhone = compPhone;
-        this.password = password;
+        this.email = email; //50
+        this.name = name;  //25
+        this.URL = URL;  //30
+        this.compPhone = compPhone;  //11
+        this.password = password;  //12
         this.password2 = password2;
-        this.phone = phone;
+        //this.phone = phone;
     }
     
     
-    private static void newCompany(String name, String URL, String compPhone, String password1, String password2, String phone) {
+    private static void newCompany(String name, String email, int compPhone, String password1, String password2, String URL) {
 
     	String password = null;
     	if (password1==password2) {
@@ -34,9 +34,9 @@ public class AddCompany {
     }
 
     //use this method to call this class
-    public static void callAddCompany(String name, String URL, String compPhone, String password, String password2, String phone) {
+    public static void callAddCompany(String name, String email, int compPhone, String password, String password2, String URL) {
     	
-        newCompany(name, URL, compPhone, password, password2, phone);
+        newCompany(name, email, compPhone, password, password2, URL);
     
     }
     
