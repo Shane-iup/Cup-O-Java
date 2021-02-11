@@ -3,12 +3,12 @@ import java.security.MessageDigest;
 
 
 public class AddUser {
-    String fName;
-    String lName;
+    String fName; //15
+    String lName; //15
     //String birthday;
-    String password;
+    String password; //12
     String password2; 
-    String email;
+    String email; //50
 
     public AddUser(String fName, String lName, String email, String password, String password2) {
         super ();
