@@ -5,23 +5,23 @@ import java.security.MessageDigest;
 public class AddUser {
     String fName;
     String lName;
-    String birthday;
+    //String birthday;
     String password;
     String password2; 
-    //String email;
+    String email;
 
-    public AddUser(String fName, String lName, String birthday, String password, String password2) {
+    public AddUser(String fName, String lName, String email, String password, String password2) {
         super ();
-        //this.email = email;
+        this.email = email;
         this.fName = fName;
         this.lName = lName;
-        this.birthday = birthday;
+        //this.birthday = birthday;
         this.password = password;
         this.password2 = password2;
     }
     
     
-    private static void newUser(String fName, String lName, String birthday, String password1, String password2) {
+    private static void newUser(String fName, String lName, String email, String password1, String password2) {
 
     	String password = null;
     	if (password1==password2) {
@@ -35,9 +35,9 @@ public class AddUser {
     }
 
     //use this method to call this class
-    public static void callAddUser(String fName, String lName, String birthday, String password, String password2) {
+    public static void callAddUser(String fName, String lName, String email, String password, String password2) {
     	
-        newUser(fName, lName, birthday, password, password2);
+        newUser(fName, lName, email, password, password2);
     
     }
     
